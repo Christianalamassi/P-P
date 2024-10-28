@@ -31,6 +31,11 @@ header {
   background-color: #000000;
   width: 100%;
   display: flex;
+  top: 0;
+  display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
 }
 
 /* logo style*/
@@ -38,10 +43,11 @@ header {
   color: #6fc406;
   font-weight: 700;
   width: 50%;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   text-transform: uppercase;
   float: left;
   padding-left: 10px;
+  font-family: 'Oswald', sans-serif;
+    font-size: 1.5rem;
 }
 
 span {
@@ -60,7 +66,7 @@ nav {
 
 /*hide the navbar*/
 #navbar {
-  display: none;
+  display: none; 
 }
 
 nav li {
@@ -99,9 +105,9 @@ nav a:hover {
 }
 
 #main-img {
+  height: 60vh;
+    background: url('../images/main.jpg') no-repeat center/cover;
   width: 100%;
-  height: 550px;
-  background: url(../images/main.jpg) no-repeat center center/cover;
   display: block;
   object-fit: contain;
   background-attachment: fixed;
@@ -164,34 +170,52 @@ h3 {
   text-shadow: 4px 4px rgb(187, 0, 0);
 }
 
+#opening li, #coffee li {
+  text-align: left;
+  font-size: large;
+}
+
 /*out pets*/
 #pet {
   background-color: rgb(87, 0, 0);
   display: flex;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   flex-wrap: wrap;
   align-items: center;
-  padding: 0px 15px;
+  /* padding: 0px 15px; */
 }
 
 .img-container {
   width: 100%;
-  display: flex;
-  align-items: center;
+  /* display: flex; */
+  /* align-items: center; */
   max-width: 300px;
+  text-align: center;
+    flex: 1 1 calc(33.333% - 20px);
 }
 
 .img-container img {
   width: 100%;
   display: block;
   object-fit: contain;
-  height: 8vh;
+  /* height: 8vh; */
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+#pet, #plants {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 1rem 0;
 }
 
 /*hover images*/
 img:hover {
   border-radius: 100px;
   box-shadow: 0 12px 16px 0 yellow, 0 17px 50px 0 yellow;
+  transform: scale(1.05);
 }
 
 #pet div {
@@ -236,7 +260,8 @@ img:hover {
   flex-wrap: wrap;
   align-items: center;
   max-width: 100%;
-
+    padding: 1rem;
+    border-radius: 10px;
 }
 
 #coffee ul{
@@ -326,8 +351,8 @@ footer {
 }
 
 .foot {
-  color: #ffffff;
-  padding-left: 20px;
+  padding: 0.5rem;
+  color: white;
 }
 
 .foot:hover {
@@ -366,8 +391,13 @@ footer {
   }
 
   #sign-up input {
-        font-size: small; 
-        padding: 2px auto;
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+
+  #sign-up input[type="submit"], #sign-up input[type="reset"] {
+    width: 100%;
+    margin-top: 1rem;
   }
 }
 
