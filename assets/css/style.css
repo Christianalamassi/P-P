@@ -33,9 +33,9 @@ header {
   display: flex;
   top: 0;
   display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
 }
 
 /* logo style*/
@@ -47,7 +47,7 @@ header {
   float: left;
   padding-left: 10px;
   font-family: 'Oswald', sans-serif;
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 span {
@@ -66,7 +66,7 @@ nav {
 
 /*hide the navbar*/
 #navbar {
-  display: none; 
+  display: none;
 }
 
 nav li {
@@ -106,7 +106,7 @@ nav a:hover {
 
 #main-img {
   height: 60vh;
-    background: url('../images/main.jpg') no-repeat center/cover;
+  background: url('../images/main.jpg') no-repeat center/cover;
   width: 100%;
   display: block;
   object-fit: contain;
@@ -170,7 +170,8 @@ h3 {
   text-shadow: 4px 4px rgb(187, 0, 0);
 }
 
-#opening li, #coffee li {
+#opening li,
+#coffee li {
   text-align: left;
   font-size: large;
 }
@@ -191,7 +192,7 @@ h3 {
   /* align-items: center; */
   max-width: 300px;
   text-align: center;
-    flex: 1 1 calc(33.333% - 20px);
+  flex: 1 1 calc(33.333% - 20px);
 }
 
 .img-container img {
@@ -204,7 +205,8 @@ h3 {
   transition: transform 0.3s;
 }
 
-#pet, #plants {
+#pet,
+#plants {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -260,11 +262,11 @@ img:hover {
   flex-wrap: wrap;
   align-items: center;
   max-width: 100%;
-    padding: 1rem;
-    border-radius: 10px;
+  padding: 1rem;
+  border-radius: 10px;
 }
 
-#coffee ul{
+#coffee ul {
   background-color: rgba(84, 5, 5, 0.7);
   padding: 10px;
 }
@@ -383,6 +385,7 @@ footer {
 /*media queries to medium screen size from 699px wide and down*/
 
 @media screen and (max-width:699px) {
+
   #opining li {
     font-size: large;
     letter-spacing: 1px;
@@ -395,7 +398,8 @@ footer {
     padding: 0.5rem;
   }
 
-  #sign-up input[type="submit"], #sign-up input[type="reset"] {
+  #sign-up input[type="submit"],
+  #sign-up input[type="reset"] {
     width: 100%;
     margin-top: 1rem;
   }
@@ -496,7 +500,7 @@ footer {
   }
 
   #sign-up input {
-    font-size: small; 
+    font-size: small;
     padding: 2px 4px;
   }
 
@@ -505,8 +509,9 @@ footer {
 /*media queries to medium screen size from 360px wide and down*/
 @media only screen and (max-width:499px) {
 
-  #submit, #reset{
-    width:100%
+  #submit,
+  #reset {
+    width: 100%
   }
 
 }
@@ -541,7 +546,7 @@ footer {
     padding: 2px 0px;
   }
 
-  footer{
+  footer {
     padding: 10px;
   }
 }
